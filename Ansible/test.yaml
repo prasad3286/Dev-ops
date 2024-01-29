@@ -1,0 +1,9 @@
+---
+- name: first yaml to verify
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+  - name: print todays system date
+    shell: "date"
